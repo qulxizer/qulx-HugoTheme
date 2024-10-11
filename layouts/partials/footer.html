@@ -1,0 +1,25 @@
+<footer class="bg-white shadow dark:bg-gray-800">
+  <div
+    class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+  >
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+      >© {{ dateFormat "2006" now }}
+      <a href="/" class="hover:underline">{{ .Site.Params.author.name }}</a>.
+      All Rights Reserved.
+    </span>
+    <ul
+      class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+    >
+    {{ with .Site.Menus.main}} {{ range sort . }}
+    <li>
+
+      <a 
+       href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}"
+       class="hover:underline me-4 md:me-6">{{ .Name }}</a>
+
+    </li>
+    {{ end }} {{ end }}
+
+    </ul>
+  </div>
+</footer>

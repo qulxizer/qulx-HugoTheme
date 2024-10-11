@@ -1,1 +1,7 @@
-# qulx-HugoTheme
+# Theme Name
+
+## Features
+
+## Installation
+
+## Configuration

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html
+  lang="{{ site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" }}
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-white shadow dark:bg-gray-800 text-gray-300"
+  >
+    <div class="flex-grow flex flex-col min-w-full">
+      <!-- Header -->
+      <header>{{ partial "header.html" }}</header>
+
+      <!-- Centered Main Content -->
+      {{ if .IsHome }}
+      <div class="flex-grow flex items-center justify-center">
+        <main class="w-4/12">{{ block "main" . }}{{ end }}</main>
+      </div>
+      {{- else -}}
+      <div class="flex-grow flex justify-center">
+        <main class="w-6/12">{{ block "main" . }}{{ end }}</main>
+      </div>
+      {{ end }}
+
+      <!-- Footer -->
+      <footer class="mt-auto">{{ partial "footer.html" }}</footer>
+    </div>
+  </body>
+</html>

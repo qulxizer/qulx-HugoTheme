@@ -1,0 +1,37 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'My New Hugo Site'
+disableKinds = ["taxonomy", "term"]
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
+[params]
+copyright-year = '2023'
+subtitle = 'The Best Widgets on Earth'
+[params.author]
+email = 'jsmith@example.org'
+name = 'John Smith'
+[params.layouts]
+rfc_1123 = 'Mon, 02 Jan 2006 15:04:05 MST'
+rfc_3339 = '2006-01-02T15:04:05-07:00'

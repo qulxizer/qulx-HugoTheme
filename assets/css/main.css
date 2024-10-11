@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight {
+  border: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+header {
+  border-bottom: 1px solid #222;
+  margin-bottom: 1rem;
+}
+
+footer {
+  /* border-top: 1px solid #222;
+  margin-top: 1rem; */
+  margin: 0rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
