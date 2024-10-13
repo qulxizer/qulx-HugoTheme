@@ -1,3 +1,4 @@
+version = 3
 name = 'Theme name'
 license = 'MIT'
 licenselink = 'https://github.com/owner/repo/LICENSE'
@@ -14,6 +15,7 @@ tags = ['blog', 'company']
 features = ['some', 'awesome', 'features']
 
 # If the theme has multiple authors
+
 authors = [
   { name = 'Name of author', homepage = 'Website of author' },
   { name = 'Name of author', homepage = 'Website of author' },

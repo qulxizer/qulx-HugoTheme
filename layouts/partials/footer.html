@@ -10,16 +10,37 @@
     <ul
       class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
     >
-    {{ with .Site.Menus.main}} {{ range sort . }}
-    <li>
+      <li>
+        <a href="/" class="hover:underline me-4 md:me-6" aria-current="page"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/posts"
+          class="hover:underline me-4 md:me-6"
+          aria-current="page"
+          >Posts</a
+        >
+      </li>
 
-      <a 
-       href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}"
-       class="hover:underline me-4 md:me-6">{{ .Name }}</a>
+      <li>
+        <a
+          href="/projects"
+          class="hover:underline me-4 md:me-6"
+          aria-current="page"
+          >Projects</a
+        >
+      </li>
 
-    </li>
-    {{ end }} {{ end }}
-
+      <li>
+        <a
+          href="/about"
+          class="hover:underline me-4 md:me-6"
+          aria-current="page"
+          >About</a
+        >
+      </li>
     </ul>
   </div>
 </footer>

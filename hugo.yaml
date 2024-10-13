@@ -1,0 +1,25 @@
+baseURL: https://example.org/
+languageCode: en-us
+params:
+  contact:
+    email: info@example.org
+    phone: +1 202-555-1212
+  subtitle: The Best Widgets on Earth
+
+  author:
+    name: "Jone Smith"
+title: ABC Widgets, Inc.
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: catppuccin-mocha
+    tabWidth: 4
